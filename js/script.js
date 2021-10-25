@@ -5,8 +5,12 @@ const contQuadrati = document.getElementById("contenitore-quadrati");
 for (let i = 1; i <= 100; i++) {
     // la condizione più specifica viene verificata per prima in modo che, quando è vera, i singoli casi vengano ignorati
     if (!(i % 3) && !(i %5)) {
-        const nuovaRiga = `<div class="quadrato tre-cinque">fizzbuzz</div>`;
-        contQuadrati.innerHTML += nuovaRiga;
+        /*const nuovaRiga = `<div class="quadrato tre-cinque">fizzbuzz</div>`;
+        contQuadrati.innerHTML += nuovaRiga;*/
+        const nuovaRiga = document.createElement("div");
+        nuovaRiga.className = "quadrato tre-cinque";
+        nuovaRiga.append("fizzbuzz");
+        contQuadrati.append(nuovaRiga);
     } else if (!(i % 3)) {
         const nuovaRiga = `<div class="quadrato tre">fizz</div>`;
         contQuadrati.innerHTML += nuovaRiga;
