@@ -1,0 +1,51 @@
+/* regole generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #083b4c;
+}
+
+#contenitore {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#contenitore-quadrati {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quadrato {
+    background-color: #1389b2;
+    height: 70px;
+    width: 70px;
+    margin: 0 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tre-cinque {
+    background-color: #f0466f;
+}
+
+.tre {
+    background-color: #0bd6a1;
+}
+
+.cinque {
+    background-color: #ffd166;
+}
